@@ -1,1 +1,149 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alex Chen - ML Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Dr. Alex Chen</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Machine Learning Researcher</h1>
+                <p>Advancing the frontiers of AI through innovative research in deep learning, computer vision, and neural networks</p>
+                <a href="#research" class="cta-button">Explore My Research</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="profile-img">👨‍💻</div>
+                    <div>
+                        <p>I'm a passionate machine learning researcher with over 8 years of experience in developing cutting-edge AI systems. My work focuses on advancing the state-of-the-art in computer vision, natural language processing, and reinforcement learning.</p>
+                        <br>
+                        <p>Currently, I'm a Senior Research Scientist at TechCorp AI Lab, where I lead a team investigating novel architectures for multimodal learning. I hold a Ph.D. in Computer Science from MIT and have published over 50 peer-reviewed papers in top-tier conferences.</p>
+                        <br>
+                        <p>My research has been recognized with several awards including the Best Paper Award at ICML 2023 and the Rising Star Award from the AI Research Society.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research Areas</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <h3>🧠 Deep Learning</h3>
+                        <p>Developing novel neural network architectures, including attention mechanisms, transformers, and graph neural networks for various applications.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>👁️ Computer Vision</h3>
+                        <p>Working on advanced image recognition, object detection, and semantic segmentation using state-of-the-art CNN and Vision Transformer models.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>🔄 Reinforcement Learning</h3>
+                        <p>Investigating multi-agent systems, policy optimization, and transfer learning in complex environments and robotics applications.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>🗣️ Natural Language Processing</h3>
+                        <p>Advancing language understanding through large language models, few-shot learning, and cross-lingual transfer learning.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>🤖 AI Ethics & Fairness</h3>
+                        <p>Developing methods for bias detection and mitigation in ML models, ensuring responsible AI deployment in real-world applications.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>🧬 AI for Science</h3>
+                        <p>Applying machine learning to accelerate scientific discovery in genomics, drug discovery, and climate modeling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2>Recent Publications</h2>
+                <ul class="publications-list">
+                    <li>
+                        <div class="pub-title">Attention-Enhanced Graph Neural Networks for Molecular Property Prediction</div>
+                        <div class="pub-venue">Nature Machine Intelligence, 2024</div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Multi-Modal Transformers for Cross-Domain Knowledge Transfer</div>
+                        <div class="pub-venue">ICML 2024 (Oral Presentation)</div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Federated Learning with Differential Privacy for Healthcare Applications</div>
+                        <div class="pub-venue">ICLR 2024</div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Zero-Shot Learning via Compositional Visual Reasoning</div>
+                        <div class="pub-venue">NeurIPS 2023 (Spotlight)</div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Efficient Neural Architecture Search for Edge Devices</div>
+                        <div class="pub-venue">AAAI 2023</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#">📧</a>
+                <a href="#">🐦</a>
+                <a href="#">📚</a>
+                <a href="#">💼</a>
+            </div>
+            <p>&copy; 2025 Dr. Alex Chen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

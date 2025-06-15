@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Alex Chen - ML Researcher</title>
+    <title>Kosuke Takemoto - (Mature) Graduate Student in ML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Dr. Alex Chen</div>
+            <div class="logo">Kosuke Takemoto</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
+<!--                <li><a href="#research">Research</a></li>-->
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
+<!--                <li><a href="#contact">Contact</a></li>-->
             </ul>
             <button class="mobile-menu">☰</button>
         </nav>
@@ -24,8 +24,8 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>Machine Learning Researcher</h1>
-                <p>Advancing the frontiers of AI through innovative research in deep learning, computer vision, and neural networks</p>
+                <h1>A (Mature) Graduate Student in YCU</h1>
+                <p>Exploring generative AI with applications to Virtual Try-On</p>
                 <a href="#research" class="cta-button">Explore My Research</a>
             </div>
         </section>
@@ -34,13 +34,15 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <div class="profile-img">👨‍💻</div>
+                    <div class="profile-img">
+                        <img src="image/profile.jpg" alt="Kosuke Takemoto - Profile Photo" class="profile-photo">
+                    </div>
                     <div>
-                        <p>I'm a passionate machine learning researcher with over 8 years of experience in developing cutting-edge AI systems. My work focuses on advancing the state-of-the-art in computer vision, natural language processing, and reinforcement learning.</p>
+                        <p>I'm a graduate student at Yokohama City University (YCU) with a unique journey bridging industry experience and academic research. With over 5 years of professional experience as a full-stack web engineer, I've developed expertise in both frontend and backend development across various technologies and frameworks.</p>
                         <br>
-                        <p>Currently, I'm a Senior Research Scientist at TechCorp AI Lab, where I lead a team investigating novel architectures for multimodal learning. I hold a Ph.D. in Computer Science from MIT and have published over 50 peer-reviewed papers in top-tier conferences.</p>
+                        <p>My path took an interesting turn when I decided to pursue formal computer science education to strengthen my foundational knowledge in mathematics, statistics, and theoretical computer science. Coming from an Economics background, I recognized the importance of building solid technical fundamentals to advance my career in technology.</p>
                         <br>
-                        <p>My research has been recognized with several awards including the Best Paper Award at ICML 2023 and the Rising Star Award from the AI Research Society.</p>
+                        <p>Currently, I'm actively researching in a Machine Learning lab, with a particular focus on Virtual Try-On applications. My research interests center around cutting-edge techniques including Diffusion Models and Transformers, exploring how these powerful architectures can revolutionize the fashion and e-commerce industries through realistic virtual garment fitting experiences.</p>
                     </div>
                 </div>
             </div>
@@ -51,28 +53,16 @@
                 <h2>Research Areas</h2>
                 <div class="research-grid">
                     <div class="research-card">
-                        <h3>🧠 Deep Learning</h3>
-                        <p>Developing novel neural network architectures, including attention mechanisms, transformers, and graph neural networks for various applications.</p>
+                        <h3>🤖 Generative AI</h3>
+                        <p>Exploring cutting-edge generative models including Diffusion Models and Transformers for high-quality image synthesis, garment generation, and creative AI applications in fashion and e-commerce.</p>
                     </div>
                     <div class="research-card">
                         <h3>👁️ Computer Vision</h3>
-                        <p>Working on advanced image recognition, object detection, and semantic segmentation using state-of-the-art CNN and Vision Transformer models.</p>
+                        <p>Applying deep learning techniques to visual understanding problems, including image recognition, pose estimation, garment segmentation, and style transfer for fashion applications.</p>
                     </div>
                     <div class="research-card">
-                        <h3>🔄 Reinforcement Learning</h3>
-                        <p>Investigating multi-agent systems, policy optimization, and transfer learning in complex environments and robotics applications.</p>
-                    </div>
-                    <div class="research-card">
-                        <h3>🗣️ Natural Language Processing</h3>
-                        <p>Advancing language understanding through large language models, few-shot learning, and cross-lingual transfer learning.</p>
-                    </div>
-                    <div class="research-card">
-                        <h3>🤖 AI Ethics & Fairness</h3>
-                        <p>Developing methods for bias detection and mitigation in ML models, ensuring responsible AI deployment in real-world applications.</p>
-                    </div>
-                    <div class="research-card">
-                        <h3>🧬 AI for Science</h3>
-                        <p>Applying machine learning to accelerate scientific discovery in genomics, drug discovery, and climate modeling.</p>
+                        <h3>👗 Virtual Try-On</h3>
+                        <p>Developing advanced virtual garment fitting systems that enable realistic clothing visualization on users, combining generative AI and computer vision to transform the e-commerce fashion experience.</p>
                     </div>
                 </div>
             </div>
@@ -83,64 +73,72 @@
                 <h2>Recent Publications</h2>
                 <ul class="publications-list">
                     <li>
-                        <div class="pub-title">Attention-Enhanced Graph Neural Networks for Molecular Property Prediction</div>
-                        <div class="pub-venue">Nature Machine Intelligence, 2024</div>
+                        <div class="pub-title">
+                            HYB-VITON: A Hybrid Approach to Virtual Try-On Combining Explicit and Implicit Warping
+                        </div>
+                        <div class="pub-authors">Kosuke Takemoto, Takafumi Koshinaka</div>
+                        <div class="pub-venue">ICASSP, 2025</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2501.03910" target="_blank" class="pub-link">📄 Paper</a>
+                            <a href="https://github.com/takesukeDS/HYB-VITON" target="_blank" class="pub-link">💻 Code</a>
+<!--                            <a href="#" target="_blank" class="pub-link">🚀 Demo</a>-->
+                        </div>
                     </li>
                     <li>
-                        <div class="pub-title">Multi-Modal Transformers for Cross-Domain Knowledge Transfer</div>
-                        <div class="pub-venue">ICML 2024 (Oral Presentation)</div>
-                    </li>
-                    <li>
-                        <div class="pub-title">Federated Learning with Differential Privacy for Healthcare Applications</div>
-                        <div class="pub-venue">ICLR 2024</div>
-                    </li>
-                    <li>
-                        <div class="pub-title">Zero-Shot Learning via Compositional Visual Reasoning</div>
-                        <div class="pub-venue">NeurIPS 2023 (Spotlight)</div>
-                    </li>
-                    <li>
-                        <div class="pub-title">Efficient Neural Architecture Search for Edge Devices</div>
-                        <div class="pub-venue">AAAI 2023</div>
+                        <div class="pub-title">Editable Virtual Try-On Using Text Prompts</div>
+                        <div class="pub-authors">Kosuke Takemoto, Takafumi Koshinaka</div>
+                        <div class="pub-venue">JSAI (Domestic Conference), 2024</div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
+<!--        <section id="contact" class="section">-->
+<!--            <div class="container">-->
+<!--                <h2>Get In Touch</h2>-->
+<!--                <form class="contact-form">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="name">Name</label>-->
+<!--                        <input type="text" id="name" name="name" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="email">Email</label>-->
+<!--                        <input type="email" id="email" name="email" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="subject">Subject</label>-->
+<!--                        <input type="text" id="subject" name="subject" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="message">Message</label>-->
+<!--                        <textarea id="message" name="message" rows="5" required></textarea>-->
+<!--                    </div>-->
+<!--                    <button type="submit" class="submit-btn">Send Message</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </section>-->
     </main>
 
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#">📧</a>
-                <a href="#">🐦</a>
-                <a href="#">📚</a>
-                <a href="#">💼</a>
+<!--                <a href="mailto:your.email@example.com" title="Email">-->
+<!--                    <img src="image/email-icon.png" alt="Email" class="social-icon">-->
+<!--                </a>-->
+                <a href="https://x.com/takesukeDS" target="_blank" title="Twitter">
+                    <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://scholar.google.com/citations?user=y7fKUIIAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                    <img src="image/scholar-icon.png" alt="Google Scholar" class="social-icon">
+                </a>
+<!--                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">-->
+<!--                    <img src="image/linkedin-icon.png" alt="LinkedIn" class="social-icon">-->
+<!--                </a>-->
+                <a href="https://github.com/takesukeDS" target="_blank" title="GitHub">
+                    <img src="image/github-icon.png" alt="GitHub" class="social-icon">
+                </a>
             </div>
-            <p>&copy; 2025 Dr. Alex Chen. All rights reserved.</p>
+            <p>&copy; 2025 Kosuke Takemoto. All rights reserved.</p>
         </div>
     </footer>
 

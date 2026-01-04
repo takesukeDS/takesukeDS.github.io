@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kosuke Takemoto - (Mature) Graduate Student in ML</title>
+    <title>Kosuke Takemoto - ML Research Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,20 +13,30 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-<!--                <li><a href="#research">Research</a></li>-->
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#publications">Publications</a></li>
-<!--                <li><a href="#contact">Contact</a></li>-->
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">日本語</button>
             <button class="mobile-menu">☰</button>
         </nav>
     </header>
 
+    <div class="availability-banner">
+        Currently seeking full-time opportunities in ML/AI Research and Engineering
+    </div>
+
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>A (Mature) Graduate Student in YCU</h1>
-                <p>Exploring generative AI with applications to Virtual Try-On</p>
-                <a href="#research" class="cta-button">Explore My Research</a>
+                <h1>ML Research Engineer</h1>
+                <div class="open-to-work-badge">🟢 Open to Work</div>
+                <p>Investigating the internal mechanisms of AI, with a focus on virtual try-on as an application</p>
+<!--                <div class="hero-buttons">-->
+<!--                    <a href="#experience" class="cta-button">View Experience</a>-->
+<!--                    <a href="resume.pdf" class="cta-button secondary" download>Download CV</a>-->
+<!--                </div>-->
             </div>
         </section>
 
@@ -42,7 +52,128 @@
                         <br>
                         <p>My path took an interesting turn when I decided to pursue formal computer science education to strengthen my foundational knowledge in mathematics, statistics, and theoretical computer science. Coming from an Economics background, I recognized the importance of building solid technical fundamentals to advance my career in technology.</p>
                         <br>
-                        <p>Currently, I'm actively researching in a Machine Learning lab, with a particular focus on Virtual Try-On applications. My research interests center around cutting-edge techniques including Diffusion Models and Transformers, exploring how these powerful architectures can revolutionize the fashion and e-commerce industries through realistic virtual garment fitting experiences.</p>
+                        <p>I'm actively researching in a Machine Learning lab, with a particular focus on Virtual Try-On applications. My research interests center around cutting-edge techniques including Diffusion Models and Transformers, exploring how these powerful architectures can revolutionize the fashion and e-commerce industries through realistic virtual garment fitting experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Graduate Student</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Yokohama City University</span>
+                                <span class="period">2024 - Present</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>Conducting research in Virtual Try-On using Diffusion Models and Transformers</li>
+                                <li>Published HYB-VITON at ICASSP 2025</li>
+                                <li>Proposed cross-attention loss with SIFT correspondences (SIFT-VTON)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Working Student</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Yokohama City University</span>
+                                <span class="period">2020 - 2024</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>Received Outstanding Graduation Thesis Award from the School of Data Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Full-Stack Web Engineer</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Various Companies</span>
+                                <span class="period">2014 - 2019 (5+ years)</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>Backend development for large-scale fashion e-commerce site (Java)</li>
+                                <li>Frontend JavaScript implementation for the same site (Vue.js, etc.)</li>
+                                <li>Dockerization of on-premises batch systems and cloud migration (AWS)</li>
+                                <li>PoC implementation of new features for in-house services and business collaboration (Python)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>🤖 Machine Learning & AI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Diffusion Models</span>
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">GANs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>💻 Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript/TypeScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🌐 Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Pyramid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>☁️ Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CI/CD (Jenkins)</span>
+                            <span class="skill-tag">Linux (Ubuntu, Debian)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🗣️ Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Japanese (Native)</span>
+                            <span class="skill-tag">English (Conversational)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>📚 Research Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">Weights & Biases</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Pandas/Polars</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,7 +201,7 @@
 
         <section id="publications" class="section">
             <div class="container">
-                <h2>Recent Publications</h2>
+                <h2>Publications</h2>
                 <ul class="publications-list">
                     <li>
                         <div class="pub-title">
@@ -81,7 +212,6 @@
                         <div class="pub-links">
                             <a href="https://arxiv.org/abs/2501.03910" target="_blank" class="pub-link">📄 Paper</a>
                             <a href="https://github.com/takesukeDS/HYB-VITON" target="_blank" class="pub-link">💻 Code</a>
-<!--                            <a href="#" target="_blank" class="pub-link">🚀 Demo</a>-->
                         </div>
                     </li>
                     <li>
@@ -93,47 +223,47 @@
             </div>
         </section>
 
-<!--        <section id="contact" class="section">-->
-<!--            <div class="container">-->
-<!--                <h2>Get In Touch</h2>-->
-<!--                <form class="contact-form">-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="name">Name</label>-->
-<!--                        <input type="text" id="name" name="name" required>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="email">Email</label>-->
-<!--                        <input type="email" id="email" name="email" required>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="subject">Subject</label>-->
-<!--                        <input type="text" id="subject" name="subject" required>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="message">Message</label>-->
-<!--                        <textarea id="message" name="message" rows="5" required></textarea>-->
-<!--                    </div>-->
-<!--                    <button type="submit" class="submit-btn">Send Message</button>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </section>-->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item availability-item">
+                            <h3>💼 Availability</h3>
+                            <p><strong>Open to full-time opportunities</strong><br>
+                            Interested in ML Research, AI Engineering, and Computer Vision roles</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>ksk.takemotto.2[at]gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>Yokohama, Japan<br>Open to relocation</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🔗 Links</h3>
+                            <div class="contact-links">
+                                <a href="https://github.com/takesukeDS" target="_blank">GitHub</a>
+                                <a href="https://scholar.google.com/citations?user=y7fKUIIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                                <a href="https://linkedin.com/in/kosuke-takemoto/" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="social-links">
-<!--                <a href="mailto:your.email@example.com" title="Email">-->
-<!--                    <img src="image/email-icon.png" alt="Email" class="social-icon">-->
-<!--                </a>-->
                 <a href="https://x.com/takesukeDS" target="_blank" title="Twitter">
                     <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
                 </a>
                 <a href="https://scholar.google.com/citations?user=y7fKUIIAAAAJ&hl=en" target="_blank" title="Google Scholar">
                     <img src="image/scholar-icon.png" alt="Google Scholar" class="social-icon">
                 </a>
-<!--                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">-->
-<!--                    <img src="image/linkedin-icon.png" alt="LinkedIn" class="social-icon">-->
-<!--                </a>-->
                 <a href="https://github.com/takesukeDS" target="_blank" title="GitHub">
                     <img src="image/github-icon.png" alt="GitHub" class="social-icon">
                 </a>

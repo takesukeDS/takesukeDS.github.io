@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武本 孝輔 - 機械学習リサーチエンジニア</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">武本 孝輔</div>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#experience">職務経歴</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#publications">論文</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">English</button>
+            <button class="mobile-menu">☰</button>
+        </nav>
+    </header>
+
+    <div class="availability-banner">
+        機械学習・AI研究開発エンジニアのフルタイムポジションを募集中
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>機械学習リサーチエンジニア</h1>
+                <div class="open-to-work-badge">🟢 求職中</div>
+                <p>仮想試着を応用例としたAIの内部動作の研究</p>
+<!--                <div class="hero-buttons">-->
+<!--                    <a href="#experience" class="cta-button">職務経歴を見る</a>-->
+<!--                    <a href="resume_ja.pdf" class="cta-button secondary" download>履歴書をダウンロード</a>-->
+<!--                </div>-->
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>自己紹介</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="image/profile.jpg" alt="武本 孝輔 - プロフィール写真" class="profile-photo">
+                    </div>
+                    <div>
+                        <p>横浜市立大学大学院データサイエンス研究科に在籍し、実務経験とアカデミックな研究を融合したキャリアを歩んでいます。フルスタックWebエンジニアとして5年以上の実務経験を持ち、フロントエンド・バックエンド開発において、様々な技術スタックやフレームワークでの専門知識を培ってきました。</p>
+                        <br>
+                        <p>経済学部出身という異色の経歴から、数学・統計学・計算機科学の基礎理論を体系的に学ぶため、正規の情報科学教育を受ける道を選びました。テクノロジー分野でのキャリアを発展させるために、確固たる技術的基礎を構築することの重要性を認識したためです。</p>
+                        <br>
+                        <p>機械学習研究室でバーチャル試着技術に焦点を当てた研究を行っています。拡散モデルやTransformerなどの最先端技術を用いて、リアルな仮想衣装フィッティング体験を通じてファッション・EC業界に革新をもたらす研究に取り組んでいます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>職務経歴</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>大学院生</h3>
+                            <div class="timeline-meta">
+                                <span class="company">横浜市立大学</span>
+                                <span class="period">2024年 - 現在</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>拡散モデルとTransformerを用いたバーチャル試着技術の研究開発</li>
+                                <li>HYB-VITONをICASSP 2025に発表</li>
+                                <li>SIFT対応点によるクロス注意損失（SIFT-VTON）の提案</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>社会人学生</h3>
+                            <div class="timeline-meta">
+                                <span class="company">横浜市立大学</span>
+                                <span class="period">2020年 - 2024年</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>データサイエンス学部最優秀卒業論文賞 受賞</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>フルスタックWebエンジニア</h3>
+                            <div class="timeline-meta">
+                                <span class="company">複数社</span>
+                                <span class="period">2014年 - 2019年（5年以上）</span>
+                            </div>
+                            <ul class="responsibilities">
+                                <li>大規模ファッションECサイトのバックエンド (Java)</li>
+                                <li>同サイトのフロントエンドでのJavaScript実装 (Vue.jsなど)</li>
+                                <li>オンプレバッチシステムのDocker化及びクラウドへの移管 (AWS)</li>
+                                <li>自社サービスにおける新機能のPoC実装及びビジネスとの連携 (Python)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>技術スキル</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>🤖 機械学習・AI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">拡散モデル</span>
+                            <span class="skill-tag">Transformer</span>
+                            <span class="skill-tag">コンピュータビジョン</span>
+                            <span class="skill-tag">GAN</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>💻 プログラミング言語</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript/TypeScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🌐 Web開発</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Pyramid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>☁️ クラウド・DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CI/CD (Jenkins)</span>
+                            <span class="skill-tag">Linux (Ubuntu, Debian)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🗣️ 言語</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">日本語（ネイティブ）</span>
+                            <span class="skill-tag">英語（日常・業務での会話）</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>📚 研究ツール</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">Weights & Biases</span>
+                            <span class="skill-tag">Pytorch</span>
+                            <span class="skill-tag">Pandas/Polars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2>研究分野</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <h3>🤖 生成AI</h3>
+                        <p>拡散モデルやTransformerなどの最先端の生成モデルを探求し、高品質な画像合成、衣装生成、ファッション・EC分野における創造的なAI応用を研究しています。</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>👁️ コンピュータビジョン</h3>
+                        <p>深層学習技術を画像認識、姿勢推定、衣装セグメンテーション、スタイル転送などの視覚理解問題に応用し、ファッション分野での活用を研究しています。</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>👗 バーチャル試着</h3>
+                        <p>生成AIとコンピュータビジョンを組み合わせ、ユーザーにリアルな衣装の可視化を可能にする高度な仮想試着システムを開発し、EC ファッション体験を変革しています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2>論文発表</h2>
+                <ul class="publications-list">
+                    <li>
+                        <div class="pub-title">
+                            HYB-VITON: A Hybrid Approach to Virtual Try-On Combining Explicit and Implicit Warping
+                        </div>
+                        <div class="pub-authors">武本 孝輔、越仲 孝文</div>
+                        <div class="pub-venue">ICASSP, 2025</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2501.03910" target="_blank" class="pub-link">📄 論文</a>
+                            <a href="https://github.com/takesukeDS/HYB-VITON" target="_blank" class="pub-link">💻 コード</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">テキストプロンプトを用いた編集可能なバーチャル試着</div>
+                        <div class="pub-authors">武本 孝輔、越仲 孝文</div>
+                        <div class="pub-venue">人工知能学会全国大会, 2024</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item availability-item">
+                            <h3>💼 就業状況</h3>
+                            <p><strong>フルタイム勤務可能</strong><br>
+                            機械学習研究、AIエンジニアリング、コンピュータビジョン分野に興味があります</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 メール</h3>
+                            <p>ksk.takemotto.2[アット]gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📍 所在地</h3>
+                            <p>神奈川県横浜市<br>転勤可能</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🔗 リンク</h3>
+                            <div class="contact-links">
+                                <a href="https://github.com/takesukeDS" target="_blank">GitHub</a>
+                                <a href="https://scholar.google.com/citations?user=y7fKUIIAAAAJ&hl=ja" target="_blank">Google Scholar</a>
+                                <a href="https://linkedin.com/in/kosuke-takemoto/" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://x.com/takesukeDS" target="_blank" title="Twitter">
+                    <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://scholar.google.com/citations?user=y7fKUIIAAAAJ&hl=ja" target="_blank" title="Google Scholar">
+                    <img src="image/scholar-icon.png" alt="Google Scholar" class="social-icon">
+                </a>
+                <a href="https://github.com/takesukeDS" target="_blank" title="GitHub">
+                    <img src="image/github-icon.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+            <p>&copy; 2025 武本 孝輔 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

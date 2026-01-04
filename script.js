@@ -1,3 +1,13 @@
+// Language toggle functionality
+function toggleLanguage() {
+    const currentPage = window.location.pathname;
+    if (currentPage.includes('index_ja.html') || currentPage.includes('ja')) {
+        window.location.href = 'index.html';
+    } else {
+        window.location.href = 'index_ja.html';
+    }
+}
+
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
     initializePortfolio();
@@ -8,7 +18,6 @@ function initializePortfolio() {
     setupSmoothScrolling();
     setupScrollAnimations();
     setupHeaderEffects();
-    setupContactForm();
     setupMobileMenu();
 }
 
@@ -52,6 +61,10 @@ function setupScrollAnimations() {
                 // Add staggered animation for publications
                 if (entry.target.querySelector('.publications-list')) {
                     animatePublications(entry.target);
+                }
+                // Add staggered animation for timeline items
+                if (entry.target.querySelector('.timeline')) {
+                    animateTimeline(entry.target);
                 }
             }
         });
@@ -97,6 +110,23 @@ function animatePublications(section) {
     });
 }
 
+// Animate timeline items with stagger effect
+function animateTimeline(section) {
+    const items = section.querySelectorAll('.timeline-item');
+    items.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-30px)';
+            item.style.transition = 'all 0.6s ease';
+            
+            requestAnimationFrame(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateX(0)';
+            });
+        }, index * 150);
+    });
+}
+
 // Header background effects on scroll
 function setupHeaderEffects() {
     let lastScrollTop = 0;
@@ -105,13 +135,11 @@ function setupHeaderEffects() {
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Change header background opacity based on scroll
+        // Change header shadow based on scroll
         if (scrollTop > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.2)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.1)';
-            header.style.boxShadow = 'none';
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
         }
         
         // Hide/show header on scroll (optional)
@@ -125,146 +153,6 @@ function setupHeaderEffects() {
         
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     }, false);
-}
-
-// Contact form functionality
-function setupContactForm() {
-    const form = document.querySelector('.contact-form');
-    const submitBtn = document.querySelector('.submit-btn');
-    
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(form);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                subject: formData.get('subject'),
-                message: formData.get('message')
-            };
-            
-            // Validate form
-            if (!validateForm(data)) {
-                return;
-            }
-            
-            // Show loading state
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission (replace with actual API call)
-            setTimeout(() => {
-                showSuccessMessage();
-                form.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
-        });
-    }
-}
-
-// Form validation
-function validateForm(data) {
-    const errors = [];
-    
-    if (!data.name.trim()) {
-        errors.push('Name is required');
-    }
-    
-    if (!data.email.trim()) {
-        errors.push('Email is required');
-    } else if (!isValidEmail(data.email)) {
-        errors.push('Please enter a valid email address');
-    }
-    
-    if (!data.subject.trim()) {
-        errors.push('Subject is required');
-    }
-    
-    if (!data.message.trim()) {
-        errors.push('Message is required');
-    }
-    
-    if (errors.length > 0) {
-        showErrorMessage(errors.join(', '));
-        return false;
-    }
-    
-    return true;
-}
-
-// Email validation
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Show success message
-function showSuccessMessage() {
-    showNotification('Thank you for your message! I will get back to you soon.', 'success');
-}
-
-// Show error message
-function showErrorMessage(message) {
-    showNotification(message, 'error');
-}
-
-// Generic notification system
-function showNotification(message, type = 'info') {
-    // Remove existing notifications
-    const existingNotification = document.querySelector('.notification');
-    if (existingNotification) {
-        existingNotification.remove();
-    }
-    
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        padding: 1rem 1.5rem;
-        border-radius: 10px;
-        color: white;
-        font-weight: bold;
-        z-index: 10000;
-        transform: translateX(400px);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    `;
-    
-    // Set background color based on type
-    const colors = {
-        success: 'linear-gradient(45deg, #4CAF50, #45a049)',
-        error: 'linear-gradient(45deg, #f44336, #da190b)',
-        info: 'linear-gradient(45deg, #2196F3, #0b7dda)'
-    };
-    
-    notification.style.background = colors[type] || colors.info;
-    notification.textContent = message;
-    
-    // Add to DOM
-    document.body.appendChild(notification);
-    
-    // Animate in
-    requestAnimationFrame(() => {
-        notification.style.transform = 'translateX(0)';
-    });
-    
-    // Remove after 5 seconds
-    setTimeout(() => {
-        notification.style.transform = 'translateX(400px)';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
-    }, 5000);
 }
 
 // Mobile menu functionality

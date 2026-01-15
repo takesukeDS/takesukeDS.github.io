@@ -117,7 +117,6 @@ main {
     font-weight: 600;
     font-size: 1.1rem;
     box-shadow: 0 2px 10px rgba(44, 90, 160, 0.2);
-    display: none;
 }
 
 /* Hero Section */
@@ -392,6 +391,82 @@ main {
     color: white;
     border-color: #2c5aa0;
     transform: translateY(-2px);
+}
+
+/* Certificates Section */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.certificate-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 3px solid #2c5aa0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.certificate-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.certificate-card h3 {
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.certificate-org {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.certificate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.certificate-score {
+    font-weight: 600;
+    color: #2c5aa0;
+}
+
+.certificate-date {
+    color: #777;
+}
+
+.certificate-link {
+    display: inline-block;
+    background: #2c5aa0;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.certificate-link:hover {
+    background: #234a84;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
 }
 
 /* Research Section */
@@ -671,7 +746,8 @@ footer {
     }
     
     .research-grid,
-    .skills-grid {
+    .skills-grid,
+    .certificates-grid {
         grid-template-columns: 1fr;
     }
     
